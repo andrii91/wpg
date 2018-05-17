@@ -1,0 +1,10 @@
+@import '../../mq';
+
+@media #{$desktopMega} {
+    @import '../desktop';
+    & {
+      .container {
+        max-width: vw(1140px);
+      }
+    }
+}
