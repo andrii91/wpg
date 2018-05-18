@@ -1,5 +1,15 @@
 @import '../../mq';
 
 @media #{$tabletLandscape} {
-    @import '../desktop';
+  @import '../desktop';
+  .course {
+    background: url(../images/imac.png) no-repeat 4.57895vw 6vw;
+    background-size: 37.52632vw;
+  }
+  .reviews, .about {
+    &:before {
+      display: block;
+    }
+  }
+
 }

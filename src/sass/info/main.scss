@@ -148,7 +148,7 @@ nav {
   }
   &:after {
     content: "";
-    width: 18px;
+    width: vw(18px);
     height: 2px;
     background: #fff;
     position: absolute;
@@ -916,4 +916,12 @@ font-weight: 300;
 
 .logo {
   width: vw(53px);
+}
+
+.menu-btn {
+  float: right;
+  display: none;
+  svg {
+    width: 30px;
+  }
 }

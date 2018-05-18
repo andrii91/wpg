@@ -55,16 +55,27 @@
         }
       });
     });
+    
+    if($(window).width() > 1200) {
+        $('.show').viewportChecker({
+          classToAdd: 'is-show', // Class to add to the elements when they are visible
+          offset: '10%'
+        });
+
+         $('.fade').addClass("hidden_animation").viewportChecker({
+          classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+          offset: '30%'
+        });
+      
+    }else{
+       $('.show').removeClass('.show');
+    }
+    
+    $('.menu-btn').click(function(){
+      $('.menu').slideToggle('200');
+      $('nav').toggleClass('bg');
+    })
 
 
-    $('.show').viewportChecker({
-      classToAdd: 'is-show', // Class to add to the elements when they are visible
-      offset: '10%'
-    });
-
-     $('.fade').addClass("hidden_animation").viewportChecker({
-      classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-      offset: '30%'
-    });
 
   });
