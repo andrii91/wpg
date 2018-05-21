@@ -1,8 +1,15 @@
 @import '../../mq';
 
 @media #{$desktopHD} {
-    @import '../desktop';
-    & {
-
+  @import '../desktop';
+  & {
+    nav {
+      .container {
+        max-width: vw(1379px);
+      }
+      .lang {
+        margin-top: vw(2px);
+      }
     }
+  }
 }

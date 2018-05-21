@@ -342,14 +342,7 @@
 
     .news-item {
       padding-bottom: 35px;
-      &:hover {
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-        transform: scale(1.05);
-        z-index: 8;
-        .content {
-          padding: 0 20px;
-        }
-      }
+
 
       .content {
         margin-top: 9px;
@@ -364,7 +357,10 @@
         }
       }
     }
-
+    .news-item .img {
+        display: inline-block;
+        max-height: 225px;
+    }
     .news-title {
       font-size: 20px;
       line-height: 25px;

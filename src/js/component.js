@@ -23,10 +23,15 @@
     $('.reviews-video').each(function () {
       $(this).find('img').attr('src', 'http://i.ytimg.com/vi/' + $(this).data('id') + '/maxresdefault.jpg');
     });
-    $('.reviews-btn').click(function () {
+
+    $('.about-video').each(function () {
+      $(this).find('img').attr('src', 'http://i.ytimg.com/vi/' + $(this).data('id') + '/maxresdefault.jpg');
+    });
+    $('.reviews-btn, .play-btn').click(function () {
       var iframe_url = "https://www.youtube.com/embed/" + $(this).parent().data('id') + "?autoplay=1&autohide=1&rel=0&amp;showinfo=0";
       $(this).hide();
       $(this).parent().find('img').hide();
+      $(this).parent().find('.paranja').hide();
       $(this).parent().append('<iframe src="' + iframe_url + '"  width="712" height="400" frameborder="0"></iframe>')
     });
 
