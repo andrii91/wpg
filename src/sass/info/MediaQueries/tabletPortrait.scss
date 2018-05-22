@@ -358,8 +358,8 @@
       }
     }
     .news-item .img {
-        display: inline-block;
-        max-height: 225px;
+      display: inline-block;
+      max-height: 225px;
     }
     .news-title {
       font-size: 20px;
@@ -506,7 +506,55 @@
         }
       }
     }
+    .course_about-item {
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .course_about-title {
+      font-size: 14px;
+    }
+    .whom-item {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .programs {
+      padding: 100px 0;
+    }
+    .programs-tab li {
+      font-size: 21px;
+      line-height: 1;
+      margin: 0 5px;
+    }
 
+    .video_info:before {
+      display: none;
+    }
+    .lms-list li {
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+    .lms-list li .col-1 {
+      padding: 0;
+    }
+    .lms {
+      padding-top: 85px;
+      padding-bottom: 109px;
+    }
+    .plans-item {
+      margin-bottom: 20px;
+    }
+    .nav-photo {
+      display: none;
+    }
+    .meetings-item {
+      img {
+        width: 100%;
+      }
+    }
+    .meetings {
+      padding: 100px 0;
+    }
 
   }
 }

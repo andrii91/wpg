@@ -6,10 +6,33 @@
     background: url(../images/imac.png) no-repeat 4.57895vw 6vw;
     background-size: 37.52632vw;
   }
-  .reviews, .about {
+  .reviews,
+  .about {
     &:before {
       display: block;
     }
+  }
+  .nav-photo {
+    display: block;
+  }
+  .mentors-img {
+    img {
+      width: 100%;
+    }
+  }
+  .video_info:before {
+    display: block;
+  }
+
+
+  .programs-tab li {
+    margin: 0 30px;
+  }
+  .whom-item img {
+    max-width: 100%;
+  }
+  .course_about-item {
+    font-size: 14px;
   }
 
 }

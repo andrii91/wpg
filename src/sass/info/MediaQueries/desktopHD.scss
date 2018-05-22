@@ -11,5 +11,16 @@
         margin-top: vw(2px);
       }
     }
+    
+    .video_info {
+        &:before {
+          left: vw(240px);
+        }
+      }
+    .course_about {
+  &:before {
+    left: vw(118px);
+  }
+    }
   }
 }

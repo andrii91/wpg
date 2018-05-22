@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:url(#SVGID_1_);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:url(#SVGID_2_);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:url(#SVGID_3_);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<title>Edit Document</title>
+<desc>A line styled icon from Orion Icon Library.</desc>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-4.9857" y1="51.1357" x2="36.1357" y2="10.0143">
+	<stop  offset="0" style="stop-color:#A3ACD9"/>
+	<stop  offset="1" style="stop-color:#E1ACA3"/>
+</linearGradient>
+<path class="st0" d="M32.3,56H2V2h24l16,16v25.1"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="24.9393" y1="19.0607" x2="35.0607" y2="8.9393">
+	<stop  offset="0" style="stop-color:#A3ACD9"/>
+	<stop  offset="1" style="stop-color:#E1ACA3"/>
+</linearGradient>
+<path class="st1" d="M26,2v16h16"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="29.0143" y1="63.1357" x2="59.7357" y2="32.4143">
+	<stop  offset="0" style="stop-color:#A3ACD9"/>
+	<stop  offset="1" style="stop-color:#E1ACA3"/>
+</linearGradient>
+<path class="st2" d="M55.1,30L34.4,50.7L30,62l11.4-4.3L62.2,37C62.2,37,55.1,30,55.1,30z M34.4,50.7l7,7"/>
+</svg>

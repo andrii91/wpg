@@ -10,6 +10,24 @@
       margin: 0,
       nav: true
     });
+    
+    var reviews_user = $('.reviews_user-carousel');
+    reviews_user.owlCarousel({
+      items: 1,
+      loop: false,
+      dots: true,
+      margin: 0,
+      nav: false
+    });
+    
+    var count_reviews_user = 0;
+    
+    $('.reviews_user-carousel .owl-dot').each(function(){
+      $(this).attr('id', count_reviews_user);
+      count_reviews_user = count_reviews_user + 1;
+    })
+    
+    $('[data-dots="'+$('.reviews_user-carousel .owl-dot.active').attr('id')+'"').addClass('active');
 
     reviews.on('change.owl.carousel', function (event) {
       var index = event.item.index;
@@ -18,6 +36,23 @@
       $($('.reviews-video')[count]).find('img').show();
       $($('.reviews-video')[count]).find('.reviews-btn').show();
     });
+
+    reviews_user.on('changed.owl.carousel', function (event) {
+     var index = event.item.index;
+      console.log(index);
+      $('.nav-photo li').removeClass('active');
+      $('.nav-photo li').removeClass('prev');
+      $('[data-dots="'+index+'"').addClass('active');
+      $('.nav-photo li.active').prev().addClass('prev');
+    });
+    
+    $('.nav-photo li').click(function(){
+      $('.nav-photo li').removeClass('active');
+      $(this).addClass('active');
+      $('#'+$(this).data('dots')).trigger('click');
+    });
+    
+    $('.nav-photo li.active').prev().addClass('prev');
 
 
     $('.reviews-video').each(function () {
@@ -81,6 +116,19 @@
       $('nav').toggleClass('bg');
     })
 
+    
+    $('.programs-tab li').click(function(){
+      $('.programs-tab li').removeClass('active');
+      $('.programs-content .item').removeClass('active');
+      
+      $(this).addClass('active');
+      $('#'+$(this).data('tab')).addClass('active');
+    });
+    
+    $('.questions-item').click(function(){
+      $(this).toggleClass('active');
+      $(this).find('.more').slideToggle(200);
+    })
 
 
   });
