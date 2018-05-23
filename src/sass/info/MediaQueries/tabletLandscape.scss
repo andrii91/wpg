@@ -31,8 +31,21 @@
   .whom-item img {
     max-width: 100%;
   }
-  .course_about-item {
+  .course_about-item,
+  .about_us_about-item p {
     font-size: 14px;
   }
+  .about_us_about-item.before:before {
+    display: block;
+  }
+  .coaches_slider {
+    top: -77px;
+  }
+  .coaches-carousel .owl-dots {
 
+    margin-top: 30px;
+  }
+  .coaches-item {
+    margin-top: 168px;
+  }
 }

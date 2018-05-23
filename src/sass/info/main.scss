@@ -68,6 +68,15 @@ header {
       }
     }
   }
+  &.about_header {
+    background: url('../images/a6sd4sa68.png') no-repeat center;
+    background-size: cover;
+    min-height: 390px;
+    margin-top: vw(108px);
+    &:before {
+      display: none;
+    }
+  }
 }
 
 nav {
@@ -2031,4 +2040,230 @@ background-image: linear-gradient(to top, #a3acd9 0%, #e1aca3 100%);
   line-height: 45px;
   text-transform: uppercase;
   margin-bottom: vw(100px);
+}
+
+.about_us_about {
+  .col-lg-6 {
+    padding: 0;
+  }
+  .about-video {
+    img, video, iframe {
+      background: #000;
+      width: 100%;
+      min-height: 380px;
+      height: inherit;
+    }
+  }
+  .container {
+    max-width: 1170px;
+  }
+  .course_about-img.show {
+    overflow: visible;
+  }
+}
+
+
+
+.about_us_about-item {
+  text-align: right;
+  img {
+    position: relative;
+    z-index: 2;
+  }
+  &.before {
+    position: relative;
+    z-index: 2;
+    &:before {
+      content: "кто   __              _ мы такие";
+      color: #f7f7f7;
+      font-family: "Proxima Nova - Black";
+      font-size: 100px;
+      font-weight: 400;
+      line-height: 100px;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: -94px;
+      left: -25px;
+      z-index: 0;
+    text-align: left;
+      
+    }
+  }
+  p {
+    text-align: left;
+    color: #909090;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 100px;
+  }
+}
+
+.about_us_about-video_item {
+  h4 {
+      color: #484848;
+      font-family: "Proxima Nova - Extrabld";
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 2.25px;
+  }
+  p {
+    color: #909090;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 390px;
+  }
+}
+
+.coaches {
+  background-color: #f7f7f7;
+  padding: 132px 0 138px;
+}
+
+.coaches-info {
+  color: #909090;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.coaches-title {
+    border: 7px solid transparent;
+	  -moz-border-image: -moz-linear-gradient(to right, #a3acd9 0%, #e1aca3 100%);
+	  -webkit-border-image: -webkit-linear-gradient(to right, #a3acd9 0%, #e1aca3 100%);
+	  border-image: linear-gradient(to right, #a3acd9 0%, #e1aca3 100%);
+	  border-image-slice: 1;
+    background-image: linear-gradient(to right, #a3acd9 0%, #e1aca3 100%);
+    color: #000000;
+    font-family: "Proxima Nova - Extrabld";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 45px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 62px 47px 72px;
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.coaches_slider {
+  position: relative;
+  top: -77px;
+  z-index: 6;
+  padding-bottom: 90px;
+}
+
+.coaches-photo {
+  width: 100%;
+}
+
+.coaches-item {
+  margin-top: 168px;
+  h4 {
+    color: #484848;
+    font-family: "Proxima Nova - Extrabld";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2.25px;
+    margin-bottom: 35px;
+  }
+  p {
+    padding-top: 35px;
+    max-width: 390px;
+    color: #909090;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    &:before {
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: #a3acd9;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.coaches-carousel {
+  position: relative;
+  padding-right: 15px;
+  .owl-dots {
+    max-width: 462px;
+    margin-left: auto;
+    margin-top: -90px;
+    .owl-dot {
+      width: 44px;
+      height: 44px;
+      background-color: #ffffff;
+      opacity: 0.7;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 35px;
+      transition: 0.2s;
+      outline: none;
+      &:focus {
+        outline: none;
+      }
+      &.active {
+        opacity: 1;
+        transform: scale(1.59);
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+        background-color: #ffffff;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .owl-nav{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20px;
+    transform: translateY(-50%);
+    .owl-next {
+      float: right;
+      &:focus {
+        outline: none;
+      }
+      span {
+        font-size: 40px;
+        line-height: 1;
+      }
+    }
+    .owl-prev {
+      display: none;
+    }
+  }
+}
+
+.command {
+  padding-top: 90px;
+  padding-bottom: vw(413px);
+  background: url(../images/f489se.png) no-repeat right bottom;
+  background-size: vw(1364px);
+}
+
+.mt100 {
+  margin-top: vw(100px);
 }

@@ -19,6 +19,19 @@
       margin: 0,
       nav: false
     });
+    $('.coaches-carousel').owlCarousel({
+      items: 1,
+      loop: true,
+      dots: true,
+      margin: 0,
+      nav: true
+    });
+    
+    
+    
+  $('.coaches-carousel .owl-item:not(.cloned) .item').each(function(i){
+    $($('.coaches-carousel .owl-dots .owl-dot')[i]).append('<img src="'+$(this).find('img').attr('src')+'" >');
+  })
     
     var count_reviews_user = 0;
     

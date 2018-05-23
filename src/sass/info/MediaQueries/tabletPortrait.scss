@@ -506,7 +506,7 @@
         }
       }
     }
-    .course_about-item {
+    .course_about-item, .about_us_about-item p {
       font-size: 12px;
       line-height: 1.4;
     }
@@ -555,6 +555,31 @@
     .meetings {
       padding: 100px 0;
     }
-
+    .about_us_about-item p {
+      padding-left: 20px;
+    }
+    .course_about-img, .about_us_about-item {
+      img {
+        width: 100%;
+      }
+    }
+    .about_us_about-item.before:before {
+      display: none;
+    }
+    .coaches_slider {
+      top: 0;
+    }
+    .coaches-item {
+      margin-top: 10px;
+    }
+    .coaches-carousel .owl-dots {
+    max-width: 100%;
+    margin-left: auto;
+    margin-top: 0px;
+      text-align: center;
+}
+    .course_about-item {
+      margin-left: auto;
+    }
   }
 }
