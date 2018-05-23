@@ -506,7 +506,8 @@
         }
       }
     }
-    .course_about-item, .about_us_about-item p {
+    .course_about-item,
+    .about_us_about-item p {
       font-size: 12px;
       line-height: 1.4;
     }
@@ -558,7 +559,8 @@
     .about_us_about-item p {
       padding-left: 20px;
     }
-    .course_about-img, .about_us_about-item {
+    .course_about-img,
+    .about_us_about-item {
       img {
         width: 100%;
       }
@@ -573,13 +575,21 @@
       margin-top: 10px;
     }
     .coaches-carousel .owl-dots {
-    max-width: 100%;
-    margin-left: auto;
-    margin-top: 0px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-top: 0px;
       text-align: center;
-}
+    }
     .course_about-item {
       margin-left: auto;
     }
+    .blog-item .content {
+      padding: 12px;
+      display: block;
+    }
+    .blog .col-lg-8 .row .blog-item img {
+    min-height: inherit;
+    width: 100%;
+  }
   }
 }

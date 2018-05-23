@@ -717,7 +717,7 @@
       min-height: inherit;
     }
   }
-  header.about_header {
+  header.about_header, .blog_header {
     margin-top: 60px;
   }
   .course_about-img {
@@ -758,6 +758,12 @@
   .about_us_about .about-video iframe, .about_us_about .about-video img, .about_us_about .about-video video {
     min-height: 240px;
   }
-
+  .blog .col-lg-8 .row .blog-item img {
+    min-height: inherit;
+    width: 100%;
+  }
+  .article {
+    padding: 60px 0;
+  }
 
 }
