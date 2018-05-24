@@ -51,4 +51,18 @@
   .blog-item .content {
     padding: 16px;
 }
+    .contacts_qw {
+    background-position: 51% center;
+  }
+  .reviews_bl-item {
+    padding: 30px;
+    text-align: left;
+    h4 {
+      margin-top: 0px;
+    }
+  }
+  .reviews_bl-item span:before {
+    left: 0%;
+    transform: translateX(0%);
+  }
 }

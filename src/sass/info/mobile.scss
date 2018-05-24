@@ -63,8 +63,7 @@
       background: #fff;
     }
     &.fixed {
-      padding: 8px 0;
-      min-height: 70px;
+      padding: 8px 0; //      min-height: 70px;
       .login {
         top: 5px;
       }
@@ -163,12 +162,13 @@
     font-size: 14px;
     letter-spacing: 2.8px;
     padding: 20px 44px;
-    &.transparent {
-      font-size: 14px;
-      letter-spacing: 2.8px;
-      padding: 20px 45px;
 
-    }
+
+  }
+  .button-transparent {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    padding: 20px 45px;
 
   }
 
@@ -588,7 +588,8 @@
   .course_about,
   .whom,
   .programs,
-  .subscription, .plans {
+  .subscription,
+  .plans {
     padding: 50px 0;
   }
   .course_about-item {
@@ -604,7 +605,8 @@
     line-height: 1.2 !important;
   }
   .whom-title p,
-  .programs-title p, .plans-title p {
+  .programs-title p,
+  .plans-title p {
     padding-top: 14px;
     font-size: 14px;
     line-height: 1.4;
@@ -686,7 +688,7 @@
     left: -5%;
     transform: none;
     transform-origin: center;
-}
+  }
   .reviews_user-carousel .item {
     padding: 20px;
   }
@@ -717,7 +719,8 @@
       min-height: inherit;
     }
   }
-  header.about_header, .blog_header {
+  header.about_header,
+  .blog_header {
     margin-top: 60px;
   }
   .course_about-img {
@@ -731,7 +734,7 @@
   .about_us_about-item p {
     padding-left: 0;
   }
-  
+
   .coaches {
     padding: 50px 0;
   }
@@ -741,7 +744,7 @@
   .coaches_slider {
     top: 0;
     padding-bottom: 50px;
-    
+
   }
   .coaches-item {
     margin-top: 10px;
@@ -755,7 +758,9 @@
   .about_us_about {
     padding: 50px 15px;
   }
-  .about_us_about .about-video iframe, .about_us_about .about-video img, .about_us_about .about-video video {
+  .about_us_about .about-video iframe,
+  .about_us_about .about-video img,
+  .about_us_about .about-video video {
     min-height: 240px;
   }
   .blog .col-lg-8 .row .blog-item img {
@@ -764,6 +769,51 @@
   }
   .article {
     padding: 60px 0;
+  }
+  .gmap {
+    position: static;
+    width: 100%;
+    height: 260px;
+  }
+  .contacts-item {
+    margin: 60px 0;
+    h1 {
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+  }
+  .contacts_qw {
+    background-position: right;
+
+    .contacts_qw-item {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+
+
+  .modal form input {
+    margin-bottom: 20px;
+  }
+  .reviews_bl .about-video iframe,
+  .reviews_bl .about-video img {
+    min-height: 220px;
+  }
+  .reviews_bl-item {
+    padding: 0;
+    text-align: center;
+    h4 {
+      margin-top: 15px;
+    }
+  }
+  .reviews_bl-item span:before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .reviews_header {
+    margin-top: 60px;
   }
 
 }
