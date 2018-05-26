@@ -102,16 +102,12 @@ nav {
     
   }
   .lang {
-/*    	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none!important;
-	-moz-appearance: none; */
+font-family: "Proxima Nova";
+      font-weight: 500;
     border: 0;
     background: none;
     color: #909090;
     font-size: vw(16px);
-    font-weight: 900;
-    line-height: vw(90px);
     letter-spacing: 1.2px;
     text-transform: uppercase;
     float: left;
