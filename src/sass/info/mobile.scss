@@ -815,5 +815,60 @@
   .reviews_header {
     margin-top: 60px;
   }
+  
+  .whom-carousel {
+  .owl-item {
+    max-height: 429px;
+    overflow: hidden;
+    opacity: 0;
+    img {
+      width: 100%;
+      height: inherit;
+      filter: blur(0px)
+    }
+    &.active {
+    margin: 0 ;
+      opacity: 1;
+        max-width: 499px;
+      +.active {
+        max-width: 602px;
+        width: 100% !important;
+        img {
+          filter: blur(0px);
+          height: inherit;
+          width: 100%;
+        }
+      }
+    }
+    
+  }
+  .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    *:focus {
+      outline: 0;
+    }
+    .owl-prev {
+      display: none;
+      float: left;
+      span {
+        font-size: 50px;
+      }
+    }
+    .owl-next {
+      float: right;
+      opacity: 1;
+      height: inherit;
+      width: 17px;
+      
+      span {
+        font-size: 50px;
+      }
+    }
+  }
+}
 
 }

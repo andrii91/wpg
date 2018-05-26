@@ -8,19 +8,20 @@
         max-width: vw(1379px);
       }
       .lang {
-        margin-top: vw(2px);
+        //        margin-top: vw(2px);
       }
     }
-    
+
     .video_info {
-        &:before {
-          left: vw(240px);
-        }
+      &:before {
+        left: vw(240px);
       }
-    .course_about {
-  &:before {
-    left: vw(118px);
-  }
     }
+    .course_about {
+      &:before {
+        left: vw(118px);
+      }
+    }
+
   }
 }
