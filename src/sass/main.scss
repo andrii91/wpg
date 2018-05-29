@@ -1472,5 +1472,8 @@
   animation-name: zoomIn;
 }
 
+.hidden_animation.left {
+  opacity: 1;
+}
   @import 'info/bootstrap';
   @import 'info/main';

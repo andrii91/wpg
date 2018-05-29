@@ -143,7 +143,7 @@
 
       $('.fade').addClass("hidden_animation").viewportChecker({
         classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-        offset: '30%',
+        offset: '0%',
          classToRemove: 'hidden_animation',
         removeClassAfterAnimation: true
       });
@@ -157,14 +157,14 @@
 
       $('.left, .reviews_bl .col-lg-6:nth-child(odd)').addClass("hidden_animation").viewportChecker({
         classToAdd: 'visible animated fadeInLeft', // Class to add to the elements when they are visible
-        offset: '10%',
+        offset: '0%',
          classToRemove: 'hidden_animation',
         removeClassAfterAnimation: true
       });
 
       $('.right, .reviews_bl .col-lg-6:nth-child(even)').addClass("hidden_animation").viewportChecker({
         classToAdd: 'visible animated fadeInRight', // Class to add to the elements when they are visible
-        offset: '10%',
+        offset: '0%',
          classToRemove: 'hidden_animation',
         removeClassAfterAnimation: true
       });
