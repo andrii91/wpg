@@ -310,6 +310,7 @@ font-family: "Proxima Nova";
     transition-duration: 0.3s;
     background: transparent;
     z-index: 1;
+    
     &:before {
         content: "";
         position: absolute;
@@ -1288,7 +1289,7 @@ font-weight: 300;
 
 .programs {
   overflow: hidden;
-  padding: 30vh 0;
+  padding: 15vh 0;
 }
 
 .programs-title {
@@ -2090,6 +2091,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .about_us_about {
+  overflow: hidden;
   .col-lg-6 {
     padding: 0;
   }
