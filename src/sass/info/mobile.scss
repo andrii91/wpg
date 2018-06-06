@@ -74,6 +74,7 @@
       margin-left: 15px;
       clear: both;
       float: none;
+      height: inherit;
       display: block;
       margin-bottom: 10px;
     }
@@ -815,60 +816,93 @@
   .reviews_header {
     margin-top: 60px;
   }
-  
+
   .whom-carousel {
-  .owl-item {
-    max-height: 429px;
-    overflow: hidden;
-    opacity: 0;
-    img {
-      width: 100%;
-      height: inherit;
-      filter: blur(0px)
-    }
-    &.active {
-    margin: 0 ;
-      opacity: 1;
+    .owl-item {
+      max-height: 429px;
+      overflow: hidden;
+      opacity: 0;
+      img {
+        width: 100%;
+        height: inherit;
+        filter: blur(0px)
+      }
+      &.active {
+        margin: 0;
+        opacity: 1;
         max-width: 499px;
-      +.active {
-        max-width: 602px;
-        width: 100% !important;
-        img {
-          filter: blur(0px);
-          height: inherit;
-          width: 100%;
+        + .active {
+          max-width: 602px;
+          width: 100% !important;
+          img {
+            filter: blur(0px);
+            height: inherit;
+            width: 100%;
+          }
+        }
+      }
+
+    }
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      *:focus {
+        outline: 0;
+      }
+      .owl-prev {
+        display: none;
+        float: left;
+        span {
+          font-size: 50px;
+        }
+      }
+      .owl-next {
+        float: right;
+        opacity: 1;
+        height: inherit;
+        width: 17px;
+
+        span {
+          font-size: 50px;
         }
       }
     }
-    
   }
-  .owl-nav {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    *:focus {
-      outline: 0;
-    }
-    .owl-prev {
-      display: none;
-      float: left;
-      span {
-        font-size: 50px;
+  .infographic-subtitle {
+    font-size: 17px;
+  }
+  .infographic-items {
+    position: relative;
+    transform: scale(0.6);
+    margin: -45px;
+  }
+  .infographic-items.left {
+    position: relative;
+    transform: scale(0.6);
+    margin: -45px auto;
+    margin-left: 55px;
+  }
+  .infographic-items.bottom {
+    width: 480px;
+    .item {
+      position: static;
+      margin: 20px 0;
+      text-align: left !important;
+      margin-left: 30px;
+      * {
+        position: relative;
+        z-index: 3;
+      }
+      &:before {
+        display: none !important;
       }
     }
-    .owl-next {
-      float: right;
-      opacity: 1;
-      height: inherit;
-      width: 17px;
-      
-      span {
-        font-size: 50px;
-      }
-    }
   }
-}
+  .arrow-whom {
+    display: none;
+  }
 
 }

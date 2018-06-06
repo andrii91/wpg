@@ -608,15 +608,30 @@
       margin-top: 60px;
     }
     .reviews_bl-item {
-    padding: 0;
-    text-align: center;
-    h4 {
-      margin-top: 15px;
+      padding: 0;
+      text-align: center;
+      h4 {
+        margin-top: 15px;
+      }
     }
-  }
-  .reviews_bl-item span:before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
+    .reviews_bl-item span:before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .infographic-items {
+      &.left,
+      &.right {
+        transform: scale(0.6);
+        margin: -45px auto -45px 36% !important;
+      }
+    }
+
+    .infographic-items.bottom {
+      margin-right: 0;
+      transform: scale(0.6) translateX(-32%);
+      margin-left: 0;
+    }
+
   }
 }

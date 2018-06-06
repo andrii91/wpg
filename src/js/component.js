@@ -27,24 +27,31 @@
       dots: false,
       margin: 0,
       nav: true,
-    responsive:{
-        0:{
-            items:1
+      responsive: {
+        0: {
+          items: 1
         },
-        760:{
-            items:2
+        760: {
+          items: 2
         }
-    }
+      }
     });
-    
+
     whom.on('changed.owl.carousel', function (event) {
       var index = event.item.index;
-      
+
       $('#slide_name').text($($('.whom-carousel .item')[index]).data('name'));
       $('#slide_post').text($($('.whom-carousel .item')[index]).data('post'));
       $('#slide_info').text($($('.whom-carousel .item')[index]).data('info'));
     });
-    
+
+    $('.whom-right').click(function () {
+      whom.trigger('next.owl.carousel');
+    })
+    $('.whom-left').click(function () {
+      whom.trigger('prev.owl.carousel');
+    })
+
     $('.coaches-carousel').owlCarousel({
       items: 1,
       loop: true,
@@ -144,42 +151,42 @@
       $('.fade').addClass("hidden_animation").viewportChecker({
         classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
         offset: '0%',
-         classToRemove: 'hidden_animation',
+        classToRemove: 'hidden_animation',
         removeClassAfterAnimation: true
       });
 
       $('.down').addClass("hidden_animation").viewportChecker({
         classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
         offset: '0%',
-         classToRemove: 'hidden_animation',
+        classToRemove: 'hidden_animation',
         removeClassAfterAnimation: true
       });
 
       $('.left, .reviews_bl .col-lg-6:nth-child(odd)').addClass("hidden_animation").viewportChecker({
         classToAdd: 'visible animated fadeInLeft', // Class to add to the elements when they are visible
         offset: '0%',
-         classToRemove: 'hidden_animation',
+        classToRemove: 'hidden_animation',
         removeClassAfterAnimation: true
       });
 
       $('.right, .reviews_bl .col-lg-6:nth-child(even)').addClass("hidden_animation").viewportChecker({
         classToAdd: 'visible animated fadeInRight', // Class to add to the elements when they are visible
         offset: '0%',
-         classToRemove: 'hidden_animation',
+        classToRemove: 'hidden_animation',
         removeClassAfterAnimation: true
       });
 
       $('.up').addClass("hidden_animation").viewportChecker({
         classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
         offset: '10%',
-         classToRemove: 'hidden_animation',
+        classToRemove: 'hidden_animation',
         removeClassAfterAnimation: true
       });
 
       $('.zIn').addClass("hidden_animation").viewportChecker({
         classToAdd: 'visible animated zoomIn', // Class to add to the elements when they are visible
         offset: '10%',
-         classToRemove: 'hidden_animation',
+        classToRemove: 'hidden_animation',
         removeClassAfterAnimation: true
       });
 
