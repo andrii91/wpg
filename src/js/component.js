@@ -73,7 +73,10 @@
       count_reviews_user = count_reviews_user + 1;
     })
 
-    $('[data-dots="' + $('.reviews_user-carousel .owl-dot.active').attr('id') + '"').addClass('active');
+/*    if($('.nav-photo')){
+      $('[data-dots="' + $('.reviews_user-carousel .owl-dot.active').attr('id') + '"').addClass('active');
+    }
+*/
 
     reviews.on('change.owl.carousel', function (event) {
       var index = event.item.index;
