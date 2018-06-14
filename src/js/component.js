@@ -91,7 +91,7 @@
       console.log(index);
       $('.nav-photo li').removeClass('active');
       $('.nav-photo li').removeClass('prev');
-      $('li[data-dots="' + index + '"').addClass('active');
+      $('li[data-dots="' + index + '"]').addClass('active');
       $('.nav-photo li.active').prev().addClass('prev');
     });
 
