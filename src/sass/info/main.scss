@@ -2276,13 +2276,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     .owl-dot {
       width: 44px;
       height: 44px;
-      background-color: #ffffff;
       opacity: 0.7;
       border-radius: 50%;
       overflow: hidden;
       margin-right: 35px;
       transition: 0.2s;
       outline: none;
+      display: inline-block;
       &:focus {
         outline: none;
       }
@@ -2290,10 +2290,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         opacity: 1;
         transform: scale(1.59);
         box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
-        background-color: #ffffff;
       }
       img {
         width: 100%;
+        display: inline-block;
       }
     }
   }
