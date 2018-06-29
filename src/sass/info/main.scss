@@ -291,7 +291,7 @@ font-family: "Proxima Nova";
       text-transform: uppercase;
       letter-spacing: vw(2.8px);
    	  
-	  border: 2px solid transparent;
+	  border: 2px solid #fff;
 	  -moz-border-image: -moz-linear-gradient(to right, #a3acd9 0%, #e1aca3 100%);
 	  -webkit-border-image: -webkit-linear-gradient(to right, #a3acd9 0%, #e1aca3 100%);
 	  border-image: linear-gradient(to right, #a3acd9 0%, #e1aca3 100%);
@@ -2631,6 +2631,10 @@ text-transform: uppercase;
       right: 0;
       top: 0;
       z-index: -1;
+    }
+    +.col-lg-6 {
+          position: relative;
+      z-index: 6;
     }
   }
 }
