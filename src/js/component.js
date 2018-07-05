@@ -591,4 +591,14 @@
       Share.go(this);
     });
 
+    
+    
+    
+    if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+      console.log('this is a touch device');
+    } else {
+      console.log('this is not a touch device');
+      $('.programs-tab li').addClass('hover')
+    }
+    
   });
